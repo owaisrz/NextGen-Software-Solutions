@@ -1,42 +1,96 @@
 /**
  * NextGen Software Solutions - Landing Page Interactive Scripts
- * Handles navigation, interactive tabs, dynamic periods, ROI calculator,
+ * Handles mobile navigation with body scroll lock, active scroll spy,
+ * interactive tabs, dynamic periods, touch-friendly ROI calculator,
  * demo modals, client-side form validation, and scroll reveal animations.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobile Menu Toggle
+  // 1. Mobile Menu Toggle with Body Scroll Lock
   const mobileToggle = document.getElementById('mobileNavToggle');
   const mobileMenu = document.getElementById('mobileNavMenu');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
+  function openMobileNav() {
+    mobileMenu?.classList.add('open');
+    mobileToggle?.classList.add('open');
+    mobileToggle?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  }
+
+  function closeMobileNav() {
+    mobileMenu?.classList.remove('open');
+    mobileToggle?.classList.remove('open');
+    mobileToggle?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = ''; // Restore background scrolling
+  }
+
   if (mobileToggle && mobileMenu) {
-    mobileToggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      mobileToggle.classList.toggle('open');
-      mobileToggle.setAttribute('aria-expanded', isOpen);
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobileMenu.classList.contains('open');
+      if (isOpen) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        mobileToggle.classList.remove('open');
-        mobileToggle.setAttribute('aria-expanded', 'false');
+        closeMobileNav();
       });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && e.target !== mobileToggle) {
+        closeMobileNav();
+      }
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        closeMobileNav();
+      }
     });
   }
 
-  // 2. Sticky Header elevation on scroll
+  // 2. Sticky Header Elevation on Scroll
   const siteHeader = document.getElementById('siteHeader');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 15) {
       siteHeader?.classList.add('scrolled');
     } else {
       siteHeader?.classList.remove('scrolled');
     }
-  });
+  }, { passive: true });
 
-  // 3. Scroll Reveal Animations (IntersectionObserver)
+  // 3. Active Scroll-Spy for Header Navigation Links
+  const navSections = document.querySelectorAll('section[id]');
+  const desktopNavLinks = document.querySelectorAll('.nav-links .nav-link');
+
+  function updateActiveNavLink() {
+    const scrollPos = window.scrollY + 120;
+    navSections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      if (scrollPos >= top && scrollPos < top + height) {
+        desktopNavLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+
+  // 4. Scroll Reveal Animations (IntersectionObserver)
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -48,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, {
       root: null,
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -30px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
@@ -58,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('is-revealed'));
   }
 
-  // 4. Product Showcase Interactive Tabs & Period Filter
+  // 5. Product Showcase Interactive Tabs & Period Filter
   const showcaseTabs = document.querySelectorAll('.showcase-tab');
   const tabPanels = {
     overview: document.getElementById('tabOverview'),
@@ -144,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Interactive ROI / Bookkeeping Time Savings Calculator
+  // 6. Touch-Friendly ROI / Bookkeeping Time Savings Calculator
   const txSlider = document.getElementById('sliderTransactions');
   const hoursSlider = document.getElementById('sliderHours');
   const txValLabel = document.getElementById('valTransactions');
@@ -179,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateRoiCalculations();
   }
 
-  // 6. Demo Modal Logic
+  // 7. Demo Modal Logic with Responsive Backdrop & Scroll Lock
   const demoModal = document.getElementById('demoModal');
   const openDemoBtns = document.querySelectorAll('.open-demo-modal');
   const closeDemoBtn = document.getElementById('closeDemoModal');
@@ -247,11 +301,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (demoSuccessState) {
           demoSuccessState.style.display = 'block';
         }
-      }, 800);
+      }, 750);
     });
   }
 
-  // 7. Main Contact Form Validation & Submission State
+  // 8. Main Contact Form Validation & Submission State
   const contactForm = document.getElementById('mainContactForm');
   const contactSuccessBanner = document.getElementById('contactSuccessBanner');
 
@@ -305,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
           contactSuccessBanner.classList.add('visible');
           contactSuccessBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
-      }, 700);
+      }, 650);
     });
 
     // Clear error class on typing
@@ -318,13 +372,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 8. Interactive Debtor Reminder Simulation Button
+  // 9. Interactive Debtor Reminder Simulation Button
   const reminderButtons = document.querySelectorAll('.send-reminder-btn');
   reminderButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const client = btn.getAttribute('data-client') || 'customer';
       const originalText = btn.textContent;
-      btn.textContent = '✓ Reminder Sent!';
+      btn.textContent = '✓ Sent!';
       btn.style.background = '#059669';
       btn.style.color = '#ffffff';
       btn.disabled = true;
@@ -341,20 +395,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mini Toast Notification System
+  // Mini Toast Notification System with Responsive Mobile Stacking
   function showToast(text) {
     let toast = document.getElementById('liveToast');
     if (!toast) {
       toast = document.createElement('div');
       toast.id = 'liveToast';
       toast.style.position = 'fixed';
-      toast.style.bottom = '24px';
-      toast.style.right = '24px';
+      toast.style.bottom = '20px';
+      toast.style.right = '20px';
+      toast.style.left = 'auto';
+      toast.style.maxWidth = 'calc(100vw - 40px)';
       toast.style.backgroundColor = '#0a1124';
       toast.style.color = '#ffffff';
-      toast.style.padding = '14px 22px';
+      toast.style.padding = '14px 20px';
       toast.style.borderRadius = '12px';
-      toast.style.boxShadow = '0 15px 35px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.1)';
+      toast.style.boxShadow = '0 15px 35px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.1)';
       toast.style.fontSize = '0.875rem';
       toast.style.fontWeight = '650';
       toast.style.zIndex = '9999';
@@ -364,7 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.style.transition = 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
       document.body.appendChild(toast);
     }
-    toast.innerHTML = `<span style="color:#34d399">●</span> ${text}`;
+    toast.innerHTML = `<span style="color:#34d399; flex-shrink: 0;">●</span> <span>${text}</span>`;
     toast.style.opacity = '1';
     toast.style.transform = 'translateY(0)';
 
