@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Software Solutions – Smart Financial Management for Small Businesses</title>
+  <meta name="description" content="Know where your money goes. Manage your business finances with confidence. Simple, organized daily income, expense, and pending payment tracking for small business owners.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans with refined stylistic sets & tabular figures -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       A. Navigation Bar (Sticky Header with Glassmorphism)
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="NextGen Software Solutions Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+            <polyline points="16 7 22 7 22 13"></polyline>
+          </svg>
+        </div>
+        <div class="brand-name">
+          NextGen
+          <span class="sub-text">Software Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#problem-solution" class="nav-link">Why NextGen</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#showcase" class="nav-link">Platform Preview</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm open-demo-modal" type="button">
+          Request a Demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav-menu" id="mobileNavMenu">
+    <a href="#home" class="nav-link mobile-nav-link">Home</a>
+    <a href="#problem-solution" class="nav-link mobile-nav-link">Why NextGen</a>
+    <a href="#features" class="nav-link mobile-nav-link">Features</a>
+    <a href="#showcase" class="nav-link mobile-nav-link">Platform Preview</a>
+    <a href="#how-it-works" class="nav-link mobile-nav-link">How It Works</a>
+    <a href="#benefits" class="nav-link mobile-nav-link">Benefits</a>
+    <a href="#contact" class="nav-link mobile-nav-link">Contact</a>
+    <button class="btn btn-primary btn-sm open-demo-modal" type="button" style="width: 100%; margin-top: 0.5rem;">
+      Request a Free Demo
+    </button>
+  </div>
+
+  <main>
+    <!-- ===================================================================
+         B. Hero Section – Strong First Impression
+         =================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content reveal-on-scroll">
+            <div class="badge badge-navy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              Smart Financial Management for Small Businesses
+            </div>
+
+            <h1 class="hero-headline">
+              Take Control of Your <span class="highlight">Business Finances.</span>
+            </h1>
+
+            <p class="hero-paragraph">
+              <strong>Know where your money goes. Manage your business finances with confidence.</strong> Track daily income, operational expenses, and pending customer payments in one simple dashboard. Spend less time managing records and more time growing your business.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn btn-primary btn-lg open-demo-modal" type="button">
+                Request a Free Demo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="#features" class="btn btn-secondary btn-lg">
+                Explore Features
+              </a>
+            </div>
+
+            <div class="hero-trust-message">
+              <div class="trust-shield-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="trust-text">
+                Simple <span class="trust-dots">•</span> Organized <span class="trust-dots">•</span> Built for Small Businesses
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Realistic High-End FinTech Software Dashboard Mockup -->
+          <div class="dashboard-mockup-wrapper reveal-on-scroll">
+            <!-- Micro Floating Badge (Top Right) -->
+            <div class="floating-pill top-right">
+              <div class="pill-icon green">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="pill-text">₹28,500 Received</div>
+                <div class="pill-subtext">Instant UPI Settlement • Just now</div>
+              </div>
+            </div>
+
+            <!-- Dashboard Window Interface -->
+            <div class="dashboard-window">
+              <!-- Window Chrome Header -->
+              <div class="window-header">
+                <div class="window-dots">
+                  <span class="window-dot red"></span>
+                  <span class="window-dot yellow"></span>
+                  <span class="window-dot green"></span>
+                </div>
+                <div class="window-title">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  app.nextgenfinance.com/dashboard
+                </div>
+                <div class="window-status">
+                  <span class="status-indicator"></span>
+                  Sync Active (99.98%)
+                </div>
+              </div>
+
+              <!-- Internal Mockup App Screen -->
+              <div class="mockup-inner">
+                <!-- Merchant Info Row -->
+                <div class="mockup-subnav">
+                  <div class="mockup-business-info">
+                    <div class="business-avatar">ST</div>
+                    <div>
+                      <div class="business-name-text">Sharma Trading Co.</div>
+                      <div class="business-type-tag">Retail & Wholesale Merchant • GSTIN Verified</div>
+                    </div>
+                  </div>
+                  <div class="mockup-time-range">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    October 2026 (Live Demo)
+                  </div>
+                </div>
+
+                <!-- 4 Core Metric Boxes with Micro Sparklines -->
+                <div class="mockup-stats-grid">
+                  <div class="stat-box">
+                    <div class="stat-label">
+                      <span>Total Income</span>
+                      <!-- Mini sparkline -->
+                      <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                        <path d="M1 12L7 9L14 11L21 4L27 2" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="stat-value">₹1,84,500</div>
+                    <div class="stat-trend positive">↑ 14.2% vs last mo</div>
+                  </div>
+
+                  <div class="stat-box">
+                    <div class="stat-label">
+                      <span>Total Expenses</span>
+                      <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                        <path d="M1 4L7 8L14 6L21 11L27 12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="stat-value">₹62,300</div>
+                    <div class="stat-trend positive">↓ 3.8% controlled</div>
+                  </div>
+
+                  <div class="stat-box">
+                    <div class="stat-label">
+                      <span>Net Balance</span>
+                      <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                        <path d="M1 10L7 8L14 5L21 4L27 1" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="stat-value" style="color: var(--color-emerald-700);">₹1,22,200</div>
+                    <div class="stat-trend positive">● Healthy Cashflow</div>
+                  </div>
+
+                  <div class="stat-box">
+                    <div class="stat-label">
+                      <span>Pending Dues</span>
+                      <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                        <path d="M1 11L7 6L14 9L21 3L27 8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="stat-value" style="color: var(--color-amber-600);">₹28,400</div>
+                    <div class="stat-trend warning">4 customers pending</div>
+                  </div>
+                </div>
+
+                <!-- Monthly Chart & Live Transactions Split -->
+                <div class="mockup-split">
+                  <!-- Chart Component -->
+                  <div class="mockup-card">
+                    <div class="card-title-row">
+                      <div class="card-heading">Cash Flow Trend</div>
+                      <div class="legend-group">
+                        <span class="legend-item"><span class="legend-dot income"></span> Income</span>
+                        <span class="legend-item"><span class="legend-dot expense"></span> Expense</span>
+                      </div>
+                    </div>
+                    <!-- Scalable Vector Chart Simulation with High-End Styling -->
+                    <div class="chart-container">
+                      <svg class="chart-svg" viewBox="0 0 280 120" preserveAspectRatio="none">
+                        <defs>
+                          <linearGradient id="heroGreenGradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#10b981" stop-opacity="0.28"/>
+                            <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+                          </linearGradient>
+                          <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#10b981" flood-opacity="0.3"/>
+                          </filter>
+                        </defs>
+
+                        <!-- Grid lines -->
+                        <line x1="0" y1="25" x2="280" y2="25" stroke="#f1f5f9" stroke-dasharray="3 3" stroke-width="1"/>
+                        <line x1="0" y1="65" x2="280" y2="65" stroke="#f1f5f9" stroke-dasharray="3 3" stroke-width="1"/>
+                        <line x1="0" y1="105" x2="280" y2="105" stroke="#f1f5f9" stroke-dasharray="3 3" stroke-width="1"/>
+
+                        <!-- Income Area Gradient & Line -->
+                        <path d="M 0,95 Q 40,70 80,75 T 160,40 T 220,50 T 280,20 L 280,120 L 0,120 Z" fill="url(#heroGreenGradient)"/>
+                        <path d="M 0,95 Q 40,70 80,75 T 160,40 T 220,50 T 280,20" fill="none" stroke="#10b981" stroke-width="2.75" stroke-linecap="round" filter="url(#glowGreen)"/>
+
+                        <!-- Expense Line -->
+                        <path d="M 0,105 Q 40,95 80,98 T 160,82 T 220,85 T 280,75" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3 3"/>
+
+                        <!-- Interactive Marker Point -->
+                        <circle cx="220" cy="50" r="4.5" fill="#ffffff" stroke="#10b981" stroke-width="2.5"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Recent Transactions List -->
+                  <div class="mockup-card">
+                    <div class="card-title-row">
+                      <div class="card-heading">Recent Records</div>
+                      <span class="badge-demo">Live Ledger</span>
+                    </div>
+                    <div class="transaction-list">
+                      <div class="tx-row">
+                        <div class="tx-meta">
+                          <div class="tx-icon-wrap income">↓</div>
+                          <div>
+                            <div class="tx-desc">Apex Hardware Sale</div>
+                            <div class="tx-category">B2B Customer • UPI Transfer</div>
+                          </div>
+                        </div>
+                        <div class="tx-amount-wrap">
+                          <div class="tx-amount income">+₹14,200</div>
+                          <span class="tx-status-pill paid">Received</span>
+                        </div>
+                      </div>
+
+                      <div class="tx-row">
+                        <div class="tx-meta">
+                          <div class="tx-icon-wrap expense">↑</div>
+                          <div>
+                            <div class="tx-desc">Store Inventory Restock</div>
+                            <div class="tx-category">Raw Materials • Autopay</div>
+                          </div>
+                        </div>
+                        <div class="tx-amount-wrap">
+                          <div class="tx-amount expense">-₹8,450</div>
+                          <span class="tx-status-pill paid">Cleared</span>
+                        </div>
+                      </div>
+
+                      <div class="tx-row">
+                        <div class="tx-meta">
+                          <div class="tx-icon-wrap pending">⏳</div>
+                          <div>
+                            <div class="tx-desc">Gupta Electronics</div>
+                            <div class="tx-category">Credit / Udhar • 3d due</div>
+                          </div>
+                        </div>
+                        <div class="tx-amount-wrap">
+                          <div class="tx-amount pending">₹6,200</div>
+                          <span class="tx-status-pill unpaid">Pending</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Micro Floating Badge (Bottom Left) -->
+            <div class="floating-pill bottom-left">
+              <div class="pill-icon navy">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="pill-text">100% Balanced Books</div>
+                <div class="pill-subtext">Zero unallocated cash leakage</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         C. Problem & Solution Section (Before vs After)
+         =================================================================== -->
+    <section class="problem-solution-section section-padding" id="problem-solution">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="badge badge-navy">The Reality for Small Businesses</div>
+          <h2 class="section-title">Managing Business Money Shouldn't Be Complicated.</h2>
+          <p class="section-subtitle">
+            Most small business owners start their business to pursue their craft, not to spend hours wrestling with disorganized receipts, calculators, and handwritten ledgers late at night.
+          </p>
+        </div>
+
+        <!-- 3 Common Challenges -->
+        <div class="challenges-grid">
+          <div class="challenge-card reveal-on-scroll">
+            <span class="challenge-number">Problem 01</span>
+            <h3 class="challenge-title">Manual Records & Lost Notebooks</h3>
+            <p class="challenge-desc">
+              Paper registers, notebooks, and messy spreadsheets take hours to maintain. One cup of spilled tea or an misplaced paper slip can wipe out weeks of important transaction records.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll">
+            <span class="challenge-number">Problem 02</span>
+            <h3 class="challenge-title">Untracked Small Expenses</h3>
+            <p class="challenge-desc">
+              Small cash outlays—local transport, quick packaging supplies, fuel, tea for customers—rarely get recorded. By the end of the month, business profits vanish without explanation.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll">
+            <span class="challenge-number">Problem 03</span>
+            <h3 class="challenge-title">Payment Confusion & Forgotten Dues</h3>
+            <p class="challenge-desc">
+              Remembering which regular customer owes ₹3,500 and whose payment cleared two weeks ago causes awkward disputes, lost working capital, and uncollected debt.
+            </p>
+          </div>
+        </div>
+
+        <!-- Solution Introduction Banner -->
+        <div class="solution-callout reveal-on-scroll">
+          <div class="badge badge-green">The Modern Solution</div>
+          <h3 class="solution-headline">One simple platform to bring your daily business finances together.</h3>
+          <p class="solution-sub">See how NextGen Software Solutions replaces the stress of manual bookkeeping with clarity and control.</p>
+        </div>
+
+        <!-- Visually Engaging Before vs After Comparison -->
+        <div class="comparison-wrapper reveal-on-scroll">
+          <!-- Before: Manual Record Keeping -->
+          <div class="comparison-col manual">
+            <span class="comparison-badge before">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+              </svg>
+              The Old Way: Manual Record-Keeping
+            </span>
+            <h4 class="col-heading">Notebooks, Slips & Clutter</h4>
+            <p class="col-subtext">Vulnerable to human errors, lost receipts, and late-night guesswork.</p>
+
+            <ul class="comparison-list">
+              <li class="comparison-item negative">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>Hours lost every evening:</strong> Manually totaling paper columns with a pocket calculator.</span>
+              </li>
+              <li class="comparison-item negative">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>Unrecorded cash leakage:</strong> Small daily expenses get forgotten, distorting true margins.</span>
+              </li>
+              <li class="comparison-item negative">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>Customer payment disputes:</strong> Awkward conversations about whether a bill was already paid.</span>
+              </li>
+              <li class="comparison-item negative">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <span><strong>Zero financial clarity:</strong> Unable to tell exact profits until the end of the year or tax filing.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- After: NextGen Digital Platform -->
+          <div class="comparison-col nextgen">
+            <span class="comparison-badge after">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              The NextGen Way: Organized Digital Tracking
+            </span>
+            <h4 class="col-heading">Instant Clarity & Total Control</h4>
+            <p class="col-subtext">Secure cloud records, automated calculations, accessible anywhere.</p>
+
+            <ul class="comparison-list">
+              <li class="comparison-item positive">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>10-second entry:</strong> Log any income or expense in seconds from your phone or desktop.</span>
+              </li>
+              <li class="comparison-item positive">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Automatic cashflow balance:</strong> Net profit, total expenses, and cash-in-hand calculated instantly.</span>
+              </li>
+              <li class="comparison-item positive">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Transparent customer debtor ledger:</strong> Track pending payments with one-tap payment reminder links.</span>
+              </li>
+              <li class="comparison-item positive">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Clear business insights:</strong> Visual monthly charts that highlight top expenses and growing revenue lines.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         D. Key Features Section
+         =================================================================== -->
+    <section class="features-section section-padding" id="features">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="badge badge-navy">Platform Capabilities</div>
+          <h2 class="section-title">Everything You Need to Manage Your Money.</h2>
+          <p class="section-subtitle">
+            Designed specifically for small shop owners and independent entrepreneurs—no complicated accounting jargon or confusing enterprise menus.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Income Tracking -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-container">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Income Tracking</h3>
+            <p class="feature-desc">
+              Record and monitor daily sales, service fees, and incoming client payments with effortless categorization. Filter by cash, UPI, card, or bank transfer.
+            </p>
+            <span class="feature-pill-tag">Daily Cash Flow</span>
+          </div>
+
+          <!-- Feature 2: Expense Management -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-container">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Expense Management</h3>
+            <p class="feature-desc">
+              Track business spending and understand where your money goes. Categorize raw materials, rent, staff wages, utilities, and daily petty cash without losing paper receipts.
+            </p>
+            <span class="feature-pill-tag">Leakage Prevention</span>
+          </div>
+
+          <!-- Feature 3: Payment Monitoring -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-container">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Payment Monitoring</h3>
+            <p class="feature-desc">
+              Keep precise track of paid and pending customer payments. Know exactly who owes your business money, how long it has been overdue, and avoid forgotten receivables.
+            </p>
+            <span class="feature-pill-tag">Credit / Udhar Control</span>
+          </div>
+
+          <!-- Feature 4: Financial Dashboard -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-container">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Financial Dashboard</h3>
+            <p class="feature-desc">
+              View income, expenses, and net profit summaries in one place. Instant visibility into your available operating balance so you can plan inventory purchases with confidence.
+            </p>
+            <span class="feature-pill-tag">All-in-One Overview</span>
+          </div>
+
+          <!-- Feature 5: Transaction History -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-container">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Transaction History</h3>
+            <p class="feature-desc">
+              Access clean, searchable records of historical business transactions. Filter by date, payment mode, vendor name, or customer in seconds whenever a question arises.
+            </p>
+            <span class="feature-pill-tag">Searchable Audit Trail</span>
+          </div>
+
+          <!-- Feature 6: Simple Reports -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-container">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Simple Reports</h3>
+            <p class="feature-desc">
+              Understand business performance through clear charts and summaries. Generate monthly profit-and-loss snapshots ready to share with tax preparers or partners.
+            </p>
+            <span class="feature-pill-tag">Exportable Summaries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         E. Product Showcase Section (Large Interactive Preview)
+         =================================================================== -->
+    <section class="showcase-section section-padding" id="showcase">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="badge badge-green">Live Product Experience</div>
+          <h2 class="section-title">A Clear View of Your Business Finances.</h2>
+          <p class="section-subtitle">
+            Explore how NextGen Software Solutions organizes complex financial details into an intuitive, elegant screen built for day-to-day business speed.
+          </p>
+        </div>
+
+        <!-- Interactive Filter Controls -->
+        <div class="showcase-controls reveal-on-scroll">
+          <div class="showcase-tabs">
+            <button class="showcase-tab active" data-tab="overview">Financial Overview</button>
+            <button class="showcase-tab" data-tab="receivables">Customer Receivables (Udhar)</button>
+            <button class="showcase-tab" data-tab="breakdown">Expense Breakdown</button>
+          </div>
+
+          <div class="showcase-period-select">
+            <span>Period:</span>
+            <button class="period-btn active" data-period="month">This Month</button>
+            <button class="period-btn" data-period="last">Last Month</button>
+            <button class="period-btn" data-period="quarter">This Quarter</button>
+          </div>
+        </div>
+
+        <!-- High-fidelity Showcase Frame (Anchored Dark Console) -->
+        <div class="showcase-display-frame reveal-on-scroll">
+          <div class="showcase-screen">
+            <!-- Top App Bar in Showcase -->
+            <div class="showcase-topbar">
+              <div class="showcase-brand-view">
+                <div class="business-avatar" style="width: 44px; height: 44px; font-size: 1.05rem; background: var(--color-emerald-500); color: #fff;">
+                  NT
+                </div>
+                <div>
+                  <div class="brand-view-title">NextGen Financial Dashboard</div>
+                  <div class="brand-view-sub">Demo Merchant: Krishna Supermarket & Wholesale Supplies</div>
+                </div>
+              </div>
+              <span class="badge-demo" style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; border-color: rgba(255, 255, 255, 0.2);">
+                Interactive Demo Preview
+              </span>
+            </div>
+
+            <!-- Tab 1: Financial Overview (Default) -->
+            <div id="tabOverview">
+              <!-- 4 Top KPI Metrics -->
+              <div class="dark-metrics-grid">
+                <div class="dark-metric-card">
+                  <div class="dark-metric-label">Total Income</div>
+                  <div class="dark-metric-value" id="metricIncome">₹1,84,500</div>
+                  <div class="dark-metric-sub green" id="trendIncome">↑ +14.2% vs previous</div>
+                </div>
+
+                <div class="dark-metric-card">
+                  <div class="dark-metric-label">Total Expenses</div>
+                  <div class="dark-metric-value" id="metricExpense">₹62,300</div>
+                  <div class="dark-metric-sub green" id="trendExpense">↓ -3.8% controlled</div>
+                </div>
+
+                <div class="dark-metric-card">
+                  <div class="dark-metric-label">Available Balance</div>
+                  <div class="dark-metric-value" id="metricBalance" style="color: var(--color-emerald-400);">₹1,22,200</div>
+                  <div class="dark-metric-sub blue">● Net Operating Surplus</div>
+                </div>
+
+                <div class="dark-metric-card">
+                  <div class="dark-metric-label">Pending Payments</div>
+                  <div class="dark-metric-value" id="metricPending" style="color: var(--color-amber-400);">₹28,400</div>
+                  <div class="dark-metric-sub amber">⏳ 4 customer invoices</div>
+                </div>
+              </div>
+
+              <!-- Main Grid: Monthly Chart & Debtor List -->
+              <div class="showcase-body-grid">
+                <!-- Large Chart View -->
+                <div class="showcase-box">
+                  <div class="showcase-box-header">
+                    <span class="box-title">Monthly Income vs. Expense Comparison</span>
+                    <div class="legend-group" style="color: #cbd5e1;">
+                      <span class="legend-item"><span class="legend-dot income"></span> Income</span>
+                      <span class="legend-item"><span class="legend-dot expense"></span> Expenses</span>
+                    </div>
+                  </div>
+
+                  <div class="large-chart-wrap">
+                    <svg viewBox="0 0 600 200" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                      <defs>
+                        <linearGradient id="showcaseGreenGlow" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#10b981" stop-opacity="0.38"/>
+                          <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+                        </linearGradient>
+                        <filter id="showcaseStrokeGlow">
+                          <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#10b981" flood-opacity="0.4"/>
+                        </filter>
+                      </defs>
+                      <!-- Grid lines -->
+                      <line x1="0" y1="50" x2="600" y2="50" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3 3"/>
+                      <line x1="0" y1="100" x2="600" y2="100" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3 3"/>
+                      <line x1="0" y1="150" x2="600" y2="150" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3 3"/>
+
+                      <!-- Dynamic Income Curve -->
+                      <path id="showcaseLineIncome" d="M 0,160 Q 60,110 120,130 T 240,80 T 360,50 T 480,90 T 600,40" fill="none" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" filter="url(#showcaseStrokeGlow)"/>
+                      <!-- Dynamic Expense Curve -->
+                      <path id="showcaseLineExpense" d="M 0,180 Q 60,160 120,170 T 240,140 T 360,130 T 480,150 T 600,120" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="4 4"/>
+                    </svg>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #94a3b8; margin-top: 0.85rem; font-weight: 600;">
+                    <span>Week 1</span>
+                    <span>Week 2</span>
+                    <span>Week 3</span>
+                    <span>Week 4</span>
+                    <span>Closing</span>
+                  </div>
+                </div>
+
+                <!-- Pending Customer Payments Sidebar -->
+                <div class="showcase-box">
+                  <div class="showcase-box-header">
+                    <span class="box-title">Pending Customer Dues</span>
+                    <span class="box-action">4 Overdue</span>
+                  </div>
+                  <div class="pending-debtors-list">
+                    <div class="debtor-row">
+                      <div>
+                        <div class="debtor-name">Balaji Electricals</div>
+                        <div class="debtor-due-date">Due: 3 days ago • Invoice #1042</div>
+                      </div>
+                      <div style="text-align: right;">
+                        <div class="debtor-amount">₹12,500</div>
+                        <button class="debtor-action-btn send-reminder-btn" data-client="Balaji Electricals">Send Reminder</button>
+                      </div>
+                    </div>
+
+                    <div class="debtor-row">
+                      <div>
+                        <div class="debtor-name">Maheshwari Stores</div>
+                        <div class="debtor-due-date">Due: Today • Invoice #1049</div>
+                      </div>
+                      <div style="text-align: right;">
+                        <div class="debtor-amount">₹7,800</div>
+                        <button class="debtor-action-btn send-reminder-btn" data-client="Maheshwari Stores">Send Reminder</button>
+                      </div>
+                    </div>
+
+                    <div class="debtor-row">
+                      <div>
+                        <div class="debtor-name">Royal Dry Cleaners</div>
+                        <div class="debtor-due-date">Due: Tomorrow • Invoice #1053</div>
+                      </div>
+                      <div style="text-align: right;">
+                        <div class="debtor-amount">₹4,600</div>
+                        <button class="debtor-action-btn send-reminder-btn" data-client="Royal Dry Cleaners">Send Reminder</button>
+                      </div>
+                    </div>
+
+                    <div class="debtor-row">
+                      <div>
+                        <div class="debtor-name">City Auto Garage</div>
+                        <div class="debtor-due-date">Due: 5 days ago • Invoice #1039</div>
+                      </div>
+                      <div style="text-align: right;">
+                        <div class="debtor-amount">₹3,500</div>
+                        <button class="debtor-action-btn send-reminder-btn" data-client="City Auto Garage">Send Reminder</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Receivables (Udhar Ledger) Detail -->
+            <div id="tabReceivables" style="display: none;">
+              <div class="showcase-box">
+                <div class="showcase-box-header">
+                  <span class="box-title">Complete Customer Credit & Receivables Ledger</span>
+                  <span class="badge-demo">Live Customer Book</span>
+                </div>
+                <div style="overflow-x: auto;">
+                  <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: #94a3b8;">
+                        <th style="padding: 0.85rem 0.6rem;">Customer Name</th>
+                        <th style="padding: 0.85rem 0.6rem;">Total Billed</th>
+                        <th style="padding: 0.85rem 0.6rem;">Amount Received</th>
+                        <th style="padding: 0.85rem 0.6rem;">Outstanding Balance</th>
+                        <th style="padding: 0.85rem 0.6rem;">Payment Due</th>
+                        <th style="padding: 0.85rem 0.6rem; text-align: right;">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                        <td style="padding: 0.95rem 0.6rem; font-weight: 750; color: #fff;">Balaji Electricals</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #cbd5e1;">₹42,500</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #34d399;">₹30,000</td>
+                        <td style="padding: 0.95rem 0.6rem; font-weight: 800; color: #fbbf24;">₹12,500</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #f87171;">3 Days Overdue</td>
+                        <td style="padding: 0.95rem 0.6rem; text-align: right;">
+                          <button class="debtor-action-btn send-reminder-btn" data-client="Balaji Electricals">WhatsApp Reminder</button>
+                        </td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                        <td style="padding: 0.95rem 0.6rem; font-weight: 750; color: #fff;">Maheshwari Stores</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #cbd5e1;">₹18,000</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #34d399;">₹10,200</td>
+                        <td style="padding: 0.95rem 0.6rem; font-weight: 800; color: #fbbf24;">₹7,800</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #cbd5e1;">Due Today</td>
+                        <td style="padding: 0.95rem 0.6rem; text-align: right;">
+                          <button class="debtor-action-btn send-reminder-btn" data-client="Maheshwari Stores">WhatsApp Reminder</button>
+                        </td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                        <td style="padding: 0.95rem 0.6rem; font-weight: 750; color: #fff;">Rameshwar Hardware</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #cbd5e1;">₹25,000</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #34d399;">₹25,000</td>
+                        <td style="padding: 0.95rem 0.6rem; font-weight: 800; color: #34d399;">₹0 (Settled)</td>
+                        <td style="padding: 0.95rem 0.6rem; color: #34d399;">Paid on Oct 24</td>
+                        <td style="padding: 0.95rem 0.6rem; text-align: right; color: #94a3b8; font-size: 0.8rem;">
+                          Receipt Sent
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Expense Breakdown Detail -->
+            <div id="tabBreakdown" style="display: none;">
+              <div class="showcase-box">
+                <div class="showcase-box-header">
+                  <span class="box-title">Monthly Expense Categories & Cost Centers</span>
+                  <span class="box-action">Total: ₹62,300</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
+                  <div style="background: rgba(255,255,255,0.035); padding: 1.35rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07);">
+                    <div style="font-size: 0.775rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Wholesale Inventory</div>
+                    <div style="font-size: 1.55rem; font-weight: 850; color: #fff; margin-top: 0.35rem;">₹34,500</div>
+                    <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.35rem;">55.4% of total expenses</div>
+                  </div>
+                  <div style="background: rgba(255,255,255,0.035); padding: 1.35rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07);">
+                    <div style="font-size: 0.775rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Store Rent & Facilities</div>
+                    <div style="font-size: 1.55rem; font-weight: 850; color: #fff; margin-top: 0.35rem;">₹15,000</div>
+                    <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.35rem;">24.1% of total expenses</div>
+                  </div>
+                  <div style="background: rgba(255,255,255,0.035); padding: 1.35rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07);">
+                    <div style="font-size: 0.775rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Transport & Delivery</div>
+                    <div style="font-size: 1.55rem; font-weight: 850; color: #fff; margin-top: 0.35rem;">₹6,800</div>
+                    <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.35rem;">10.9% of total expenses</div>
+                  </div>
+                  <div style="background: rgba(255,255,255,0.035); padding: 1.35rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07);">
+                    <div style="font-size: 0.775rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Petty Cash & Utilities</div>
+                    <div style="font-size: 1.55rem; font-weight: 850; color: #fff; margin-top: 0.35rem;">₹6,000</div>
+                    <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.35rem;">9.6% of total expenses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         F. How It Works Section
+         =================================================================== -->
+    <section class="how-it-works-section section-padding" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="badge badge-navy">Simple Workflow</div>
+          <h2 class="section-title">Get Started in Three Simple Steps.</h2>
+          <p class="section-subtitle">
+            No steep learning curve. Set up your business profile in 2 minutes and start recording daily transactions immediately.
+          </p>
+        </div>
+
+        <div class="steps-row">
+          <!-- Step 1 -->
+          <div class="step-card reveal-on-scroll">
+            <div class="step-badge">1</div>
+            <h3 class="step-title">Add Transactions</h3>
+            <p class="step-desc">
+              Enter your daily income and expenses in seconds. Record quick cash sales, bank transfers, or supplier receipts from any device as they happen.
+            </p>
+            <div class="step-visual-snippet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--color-emerald-600);"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              <span>+ Quick Entry: Amount, Category, Payment Type</span>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card reveal-on-scroll">
+            <div class="step-badge">2</div>
+            <h3 class="step-title">Track Your Money</h3>
+            <p class="step-desc">
+              Monitor customer payments and view updated financial records in real time. Filter pending dues and send friendly payment reminders with a tap.
+            </p>
+            <div class="step-visual-snippet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--color-amber-500);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Real-time balance & overdue notifications</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card reveal-on-scroll">
+            <div class="step-badge">3</div>
+            <h3 class="step-title">Understand Your Business</h3>
+            <p class="step-desc">
+              Use summaries and reports to make better financial decisions. Spot your peak profit days, control overhead spending, and plan your next inventory cycle.
+            </p>
+            <div class="step-visual-snippet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--color-blue-500);"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <span>1-click monthly Profit & Loss export</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         G. Benefits Section + Interactive Time Saved Calculator
+         =================================================================== -->
+    <section class="benefits-section section-padding" id="benefits">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="badge badge-green">Why Business Owners Choose Us</div>
+          <h2 class="section-title">Less Time Managing Records. More Time Growing Your Business.</h2>
+          <p class="section-subtitle">
+            NextGen Software Solutions replaces bookkeeping frustration with measurable peace of mind.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3 class="benefit-title">Reduce Manual Record-Keeping</h3>
+              <p class="benefit-desc">Eliminate paper registers, manual calculator errors, and duplicate data entry after closing hours.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3 class="benefit-title">Keep Financial Info Organized</h3>
+              <p class="benefit-desc">Store every sales voucher, expense receipt, and supplier payment in a single, secure cloud ledger.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3 class="benefit-title">Monitor Pending Payments</h3>
+              <p class="benefit-desc">Never let a customer debt slip through the cracks. Receive gentle alerts before dues turn into bad debts.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3 class="benefit-title">Understand Spending Patterns</h3>
+              <p class="benefit-desc">See clearly which expense categories consume your cashflow and negotiate better deals with high-volume suppliers.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3 class="benefit-title">Save Time Daily</h3>
+              <p class="benefit-desc">Save an average of 15–20 hours each month on ledger reconciliation so you can spend your evenings with family.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3 class="benefit-title">Make Informed Business Decisions</h3>
+              <p class="benefit-desc">Know your true gross and net margins before investing in new inventory, seasonal equipment, or store expansion.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Small Business Time & Dues Calculator Console -->
+        <div class="calculator-container reveal-on-scroll">
+          <div class="calculator-grid">
+            <div>
+              <div class="badge badge-green" style="margin-bottom: 0.85rem;">Interactive ROI Estimator</div>
+              <h3 class="calc-title">How much time does manual bookkeeping cost you?</h3>
+              <p class="calc-subtitle">Adjust the sliders below to estimate the monthly hours and overdue receivables NextGen can help you recover.</p>
+
+              <!-- Slider 1 -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span>Daily Customer Transactions:</span>
+                  <span class="slider-value" id="valTransactions">35 bills/day</span>
+                </div>
+                <input type="range" class="custom-range" id="sliderTransactions" min="10" max="150" value="35" step="5">
+              </div>
+
+              <!-- Slider 2 -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span>Hours spent on registers per week:</span>
+                  <span class="slider-value" id="valHours">6 hrs/wk</span>
+                </div>
+                <input type="range" class="custom-range" id="sliderHours" min="2" max="20" value="6" step="1">
+              </div>
+            </div>
+
+            <!-- Dynamic Result Card -->
+            <div class="calc-result-box">
+              <div class="result-metric-large" id="resultHoursSaved">20 hrs</div>
+              <div class="result-metric-label">Estimated Time Saved Every Month</div>
+
+              <div class="result-breakdown">
+                <div>
+                  <strong id="resultMoneyProtected">₹11,200</strong>
+                  <span>Forgotten dues recovered/mo</span>
+                </div>
+                <div>
+                  <strong id="resultEfficiencyRate">75%</strong>
+                  <span>Reconciliation speedup</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-sm open-demo-modal" type="button" style="width: 100%; margin-top: 1.75rem;">
+                Claim Your Free Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         H. Call-to-Action Section
+         =================================================================== -->
+    <section class="cta-section section-padding">
+      <div class="container">
+        <div class="cta-box reveal-on-scroll">
+          <div class="badge badge-green" style="margin-bottom: 1.15rem;">Take The Next Step</div>
+          <h2 class="cta-headline">Ready to Simplify Your Business Finances?</h2>
+          <p class="cta-paragraph">
+            Discover a smarter and simpler way to track your business money. Request a live guided walkthrough tailored to your specific retail, service, or trade business.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary btn-lg open-demo-modal" type="button">
+              Request a Free Demo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="#contact" class="btn btn-ghost-white btn-lg">
+              Contact Our Team
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         I. Contact Section
+         =================================================================== -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Official Contact Information & Placeholders -->
+          <div class="contact-info-col reveal-on-scroll">
+            <div class="badge badge-navy">Get In Touch</div>
+            <h2 class="contact-heading">Let's Talk About Your Business.</h2>
+            <p class="contact-subtext">
+              Have questions about how NextGen Software Solutions fits your store or enterprise? Reach out to our team directly. We are happy to walk you through our platform.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Company Info -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Company</div>
+                  <div class="contact-meta-value">NextGen Software Solutions</div>
+                </div>
+              </div>
+
+              <!-- Official Email Placeholder -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Official Email</div>
+                  <div class="contact-meta-placeholder">[Insert your official business email]</div>
+                </div>
+              </div>
+
+              <!-- Contact Number Placeholder -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Phone Support</div>
+                  <div class="contact-meta-placeholder">[Insert your business contact number]</div>
+                </div>
+              </div>
+
+              <!-- Location Placeholder -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Headquarters / Location</div>
+                  <div class="contact-meta-placeholder">[Insert your business location]</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Transparency notice -->
+            <div class="transparency-callout">
+              <strong>Transparent Integration Notice:</strong> The contact placeholders above are configured for your official production credentials. Submissions through this form trigger client-side validation and local logging. Backend endpoints can be connected directly via standard REST API or webhook.
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Contact Form -->
+          <div class="contact-form-card reveal-on-scroll">
+            <form id="mainContactForm" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="fullName" class="form-control" placeholder="e.g. Rajesh Kumar" required>
+                  <span class="form-error-msg">Please provide your full name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="businessName">Business Name <span class="required">*</span></label>
+                  <input type="text" id="businessName" class="form-control" placeholder="e.g. Kumar General Store" required>
+                  <span class="form-error-msg">Please specify your business name.</span>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" class="form-control" placeholder="rajesh@example.com" required>
+                  <span class="form-error-msg">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210" required>
+                  <span class="form-error-msg">Please enter a reachable contact number.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message / Business Requirements <span class="required">*</span></label>
+                <textarea id="message" class="form-control" placeholder="Tell us about your business type (retail, wholesale, services) and how you currently manage your daily accounts..." required></textarea>
+                <span class="form-error-msg">Please describe your inquiry or requirements.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Send Enquiry
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <p class="form-disclaimer">
+                We respect your privacy. No spam. A product specialist will contact you within 24 hours.
+              </p>
+            </form>
+
+            <!-- Success State Banner -->
+            <div class="form-success-banner" id="contactSuccessBanner">
+              <div class="success-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h4 style="font-size: 1.35rem; font-weight: 850; color: var(--color-navy-950); margin-bottom: 0.5rem;">
+                Thank You for Reaching Out!
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6;">
+                Your enquiry has been successfully logged. Our solutions team at <strong>NextGen Software Solutions</strong> will review your business requirements and connect with you shortly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       J. Footer
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand & Description -->
+        <div class="footer-brand-col">
+          <a href="#home" class="brand-logo" style="color: #fff;">
+            <div class="brand-icon" style="background: rgba(255,255,255,0.1);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <div class="brand-name" style="color: #fff;">
+              NextGen
+              <span class="sub-text" style="color: #34d399;">Software Solutions</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            NextGen Software Solutions is a dedicated FinTech platform empowering small shop owners, independent retailers, and entrepreneurs to manage daily income, expenses, and customer credit with confidence.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="LinkedIn placeholder">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter/X placeholder">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook placeholder">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Product Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#features" class="footer-link">Features Overview</a></li>
+            <li><a href="#showcase" class="footer-link">Interactive Demo Preview</a></li>
+            <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="#benefits" class="footer-link">Benefits for Small Shops</a></li>
+          </ul>
+        </div>
+
+        <!-- Features Links -->
+        <div>
+          <h4 class="footer-heading">Core Modules</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Income Tracking</a></li>
+            <li><a href="#features" class="footer-link">Expense Categorization</a></li>
+            <li><a href="#features" class="footer-link">Udhar / Payment Monitoring</a></li>
+            <li><a href="#features" class="footer-link">Real-time Financial Dashboard</a></li>
+            <li><a href="#features" class="footer-link">Simplified Tax & P&L Reports</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Business Info -->
+        <div>
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-item">
+            <strong>Company:</strong><br>
+            NextGen Software Solutions
+          </div>
+          <div class="footer-contact-item">
+            <strong>Email:</strong><br>
+            <span style="font-style: italic; color: #94a3b8;">[Insert your official business email]</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Support:</strong><br>
+            <span style="font-style: italic; color: #94a3b8;">[Insert your business contact number]</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Location:</strong><br>
+            <span style="font-style: italic; color: #94a3b8;">[Insert your business location]</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 NextGen Software Solutions. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#contact" class="footer-link">Privacy Policy</a>
+          <a href="#contact" class="footer-link">Terms of Service</a>
+          <a href="#contact" class="footer-link">Security Overview</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       Interactive Demo Request Modal
+       =================================================================== -->
+  <div class="modal-overlay" id="demoModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">Request a Guided Product Demo</h3>
+        <p class="modal-subtitle">Experience how NextGen simplifies your daily store finances.</p>
+        <button class="modal-close-btn" id="closeDemoModal" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="demoModalForm">
+          <div class="form-group">
+            <label class="form-label" for="demoName">Your Name <span class="required">*</span></label>
+            <input type="text" id="demoName" class="form-control" placeholder="e.g. Priya Patel" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="demoBusiness">Business / Store Name <span class="required">*</span></label>
+            <input type="text" id="demoBusiness" class="form-control" placeholder="e.g. Patel Provision Mart" required>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="demoPhone">Phone (WhatsApp) <span class="required">*</span></label>
+              <input type="tel" id="demoPhone" class="form-control" placeholder="+91 98200 12345" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="demoType">Business Category</label>
+              <select id="demoType" class="form-control" style="background: #fff;">
+                <option value="retail">Retail / Kirana Shop</option>
+                <option value="wholesale">Wholesale & Distribution</option>
+                <option value="service">Services / Workshop</option>
+                <option value="freelance">Independent Entrepreneur</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 0.5rem;">
+            Schedule My Free 15-Min Walkthrough
+          </button>
+          <p class="form-disclaimer">
+            Zero commitment • Free 1-on-1 walkthrough • Personal setup guidance
+          </p>
+        </form>
+
+        <div id="demoModalSuccess" style="display: none; text-align: center; padding: 1.5rem 0;">
+          <div class="success-icon">✓</div>
+          <h4 style="font-size: 1.35rem; font-weight: 850; color: var(--color-navy-950); margin-bottom: 0.5rem;">
+            Demo Request Confirmed!
+          </h4>
+          <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6; margin-bottom: 1.5rem;">
+            Thank you! A NextGen product specialist will reach out on WhatsApp/Phone to confirm your preferred walkthrough time.
+          </p>
+          <button class="btn btn-navy btn-sm" onclick="document.getElementById('closeDemoModal').click();">
+            Close & Back to Site
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
