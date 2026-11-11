@@ -284,6 +284,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Walkthrough Slot Selection in Demo Modal
+  const slotPills = document.querySelectorAll('.slot-pill');
+  const demoSelectedSlot = document.getElementById('demoSelectedSlot');
+  slotPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      slotPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      if (demoSelectedSlot) {
+        demoSelectedSlot.value = pill.getAttribute('data-slot') || pill.textContent;
+      }
+    });
+  });
+
   // Demo Modal Form Submission
   if (demoForm) {
     demoForm.addEventListener('submit', (e) => {
@@ -402,16 +415,18 @@ document.addEventListener('DOMContentLoaded', () => {
       toast = document.createElement('div');
       toast.id = 'liveToast';
       toast.style.position = 'fixed';
-      toast.style.bottom = '20px';
-      toast.style.right = '20px';
-      toast.style.left = 'auto';
-      toast.style.maxWidth = 'calc(100vw - 40px)';
+      toast.style.bottom = '16px';
+      toast.style.right = '16px';
+      toast.style.left = '16px';
+      toast.style.margin = '0 auto';
+      toast.style.width = 'max-content';
+      toast.style.maxWidth = 'calc(100vw - 32px)';
       toast.style.backgroundColor = '#0a1124';
       toast.style.color = '#ffffff';
-      toast.style.padding = '14px 20px';
+      toast.style.padding = '12px 18px';
       toast.style.borderRadius = '12px';
-      toast.style.boxShadow = '0 15px 35px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.1)';
-      toast.style.fontSize = '0.875rem';
+      toast.style.boxShadow = '0 15px 35px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.1)';
+      toast.style.fontSize = '0.85rem';
       toast.style.fontWeight = '650';
       toast.style.zIndex = '9999';
       toast.style.display = 'flex';
